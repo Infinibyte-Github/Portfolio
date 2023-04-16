@@ -1,0 +1,2 @@
+1. Fix about page after reset.css application
+2. Fix Various padding issue
