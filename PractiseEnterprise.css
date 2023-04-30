@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #282828;
+    font-family: 'Open Sans', sans-serif;
+    min-width: 1200px;
+}
+
+h1 {
+    text-align: left;
+    color: #fff;
+    font-size: 30px;
+    margin: 0;
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    margin: 2%;
+}
+
+p {
+    text-align: center;
+    color: #fff;
+    font-size: 1em;
+    margin: 2%;
+    line-height: 150%;
+}
+
+.Navigation {
+    background-color: #333;
+    padding: 10px;
+    margin: 0px;
+    background:
+        radial-gradient(black 15%, transparent 16%) 0 0,
+        radial-gradient(black 15%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,
+        radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+    background-color: #282828;
+    background-size: 16px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.UnderlineAnimation {
+    display: inline-block;
+    position: relative;
+    padding: 10px 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.UnderlineAnimation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.UnderlineAnimation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.Cool {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: url(./assets/GrafanaDashboard.png);
+    /* https://grafana.com/ */
+    background-size: auto;
+}
+
+.Button {
+    border-radius: 12px;
+    background-color: hsl(340deg 100% 32%);
+    border: 2px solid hsl(340deg 100% 32%);
+    cursor: pointer;
+    transition: 0.4s;
+    margin: 2%;
+}
+
+.Button a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 1.8em;
+}
+
+.Button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.Box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #333;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Discord:hover > .DiscordText {
+    border-left: 4px solid hsl(340deg 100% 32%);
+    transition: 1000ms;
+}
+
+.Discord:hover > .DiscordImage img {
+    transform: rotate(360deg);
+    transition: 1000ms;
+}
+
+
+.DiscordImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 50%;
+}
+
+img {
+    width: 300px;
+}
+
+.DiscordText {
+    padding: 2%;
+    flex: 50%;
+    border-left: 4px solid white;
+    transition: 1000ms;
+}
+
+.Grafana:hover > .GrafanaText {
+    border-right: 4px solid hsl(340deg 100% 32%);
+    transition: 1000ms;
+}
+
+.Grafana:hover > .GrafanaImage img {
+    transform: rotate(360deg);
+    transition: 1000ms;
+}
+
+.GrafanaText {
+    padding: 2%;
+    flex: 50%;
+    border-right: 4px solid white;
+    transition: 1000ms;
+}
+
+.Image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 50%;
+}
+
+.SQlite:hover > .SQliteText {
+    border-left: 4px solid hsl(340deg 100% 32%);
+    transition: 1000ms;
+}
+
+.SQlite:hover > .SQliteImage img {
+    transform: rotate(360deg);
+    transition: 1000ms;
+}
+
+.SQliteText {
+    padding: 2%;
+    flex: 50%;
+    border-left: 4px solid white;
+    transition: 1000ms;
+}
+
+.SQlite img{
+    width: 500px;
+}

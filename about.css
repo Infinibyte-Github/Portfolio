@@ -297,30 +297,30 @@ nav li {
 .Back {
     height: 100%;
     width: 100%;
-    border-radius: 10%;
+    border-radius: 50px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: absolute;
     backface-visibility: hidden;
 }
 
 .Programming {
-    background-image: url(./Programming.jpg);
+    background-image: url(./assets/Programming.jpg);
     /* https://www.rawpixel.com/image/5925774/photo-image-background-public-domain-blue */
 }
 
 .Wintersport {
-    background-image: url(./Wintersport2.jpg);
+    background-image: url(./assets/Wintersport2.jpg);
     /* https://wallpapercave.com/burton-snowboard-wallpaper */
 
 }
 
 .Minecraft {
-    background-image: url(./Minecraft2.jpg);
+    background-image: url(./assets/Minecraft2.jpg);
     /* https://wallpapers.com/minecraft */
 }
 
 .Tinkering {
-    background-image: url(./Tinkering2.jpg);
+    background-image: url(./assets/Tinkering2.jpg);
     /* https://www.istockphoto.com/fr/photo/souder-un-processeur-de-micro-puce-avec-le-boad-vert-de-circuit-doutil-de-fer-gm1169550733-323351792 */
 }
 

@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -14,20 +18,25 @@ h1 {
     padding: 10px;
 }
 
-p {
-    text-align: left;
+h2 {
+    text-align: center;
     color: #fff;
     font-size: 40px;
-    margin: 0;
-    padding: 10px;
-    font-weight: bold;
+    margin: 2%;
+}
+
+p {
+    text-align: center;
+    color: #fff;
+    font-size: 1em;
+    margin: 2%;
+    line-height: 150%;
 }
 
 .Navigation {
     background-color: #333;
     padding: 10px;
     margin: 0px;
-    /* Background from css gallery: https://projects.verou.me/css3patterns/ */
     background:
         radial-gradient(black 15%, transparent 16%) 0 0,
         radial-gradient(black 15%, transparent 16%) 8px 8px,
@@ -39,7 +48,6 @@ p {
     justify-content: space-between;
 }
 
-/* Code for underlining aniation from https://www.w3resource.com/html-css-exercise/html-css-practical-exercises/html-css-practical-exercise-15.php */
 .UnderlineAnimation {
     display: inline-block;
     position: relative;
@@ -65,53 +73,6 @@ p {
 .UnderlineAnimation:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-}
-
-.Content {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-.Text {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.ButtonWrapper {
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
-}
-
-.Button {
-    border-radius: 12px;
-    background-color: hsl(340deg 100% 32%);
-    border: 2px solid hsl(340deg 100% 32%);
-    cursor: pointer;
-    transition: 0.4s;
-    margin: 2%;
-}
-
-.Button a {
-    text-decoration: none;
-    color: white;
-    padding: 10px 20px;
-    display: inline-block;
-    font-size: 1.8em;
-}
-
-.Button:hover {
-    background-color: #333;
-    color: white;
 }
 
 nav ul {

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- CSS reset import -->
+    <link rel="stylesheet" href="reset.css">
+
+    <!-- Open Sans font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- jQuery import -->
+    <script src="./jQuery.js"></script>
+
+    <script>
+        function init() {
+            // make the explore button breathe
+            setInterval(function () {
+                $(".Button").animate({
+                    opacity: 0.3
+                }, 1000, function () {
+                    $(".Button").animate({
+                        opacity: 1
+                    }, 1000);
+                });
+            }, 2000);
+        };
+    </script>
+
+    <!-- CSS import -->
+    <link rel="stylesheet" href="PractiseEnterprise.css">
+
+    <title>About me</title>
+</head>
+
+<body onload="init()">
+    <div class="Navigation">
+        <h1>Practise Enterprise</h1>
+        <nav>
+            <ul>
+                <li><a class="UnderlineAnimation" href="index.html">Home</a></li>
+                <li><a class="UnderlineAnimation" href="about.html">About</a></li>
+                <li><a class="UnderlineAnimation" href="#">Practise Enterprise</a></li>
+                <li><a class="UnderlineAnimation" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="Cool">
+        <h2>Manage discord servers like never before!</h2>
+        <button class="Button">
+            <a href="#Discord">Explore</a>
+        </button>
+    </div>
+
+    <div class="Discord Box" id="Discord">
+        <div class="DiscordImage">
+            <!-- https://discord.com/branding -->
+            <img src="./assets/discord-mark-blue.png" alt="">
+        </div>
+        <div class="DiscordText">
+            <h2>Discord bot</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam necessitatibus quis placeat, cupiditate
+                recusandae totam omnis eos debitis numquam sed magni voluptatum distinctio reiciendis delectus suscipit
+                corporis vero! Adipisci, sit?
+                Eligendi, tenetur temporibus aliquid consectetur rerum veniam vitae incidunt commodi exercitationem
+                assumenda, architecto, debitis itaque autem sed non? Esse, laborum nihil. Dolor quis temporibus sequi
+                porro ad, qui magnam. Molestias.
+                Neque magni aut modi! Nostrum id, ut adipisci, temporibus, atque molestiae debitis labore amet suscipit
+                quam harum doloribus rem nam dignissimos asperiores deserunt. Minus quod esse natus? Atque, corporis
+                laudantium.</p>
+        </div>
+    </div>
+
+    <div class="Grafana Box">
+        <div class="GrafanaText">
+            <h2>Grafana dashboard</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam necessitatibus quis placeat, cupiditate
+                recusandae totam omnis eos debitis numquam sed magni voluptatum distinctio reiciendis delectus suscipit
+                corporis vero! Adipisci, sit?
+                Eligendi, tenetur temporibus aliquid consectetur rerum veniam vitae incidunt commodi exercitationem
+                assumenda, architecto, debitis itaque autem sed non? Esse, laborum nihil. Dolor quis temporibus sequi
+                porro ad, qui magnam. Molestias.
+                Neque magni aut modi! Nostrum id, ut adipisci, temporibus, atque molestiae debitis labore amet suscipit
+                quam harum doloribus rem nam dignissimos asperiores deserunt. Minus quod esse natus? Atque, corporis
+                laudantium.</p>
+        </div>
+        <div class="GrafanaImage Image">
+            <!-- grafana.com -->
+            <img src="./assets/grafana_logo.png" alt="">
+        </div>
+    </div>
+
+    <div class="SQlite Box">
+        <div class="SQliteImage Image">
+            <!-- https://dwglogo.com/sqlite/ -->
+            <img src="./assets/SQLite_logo.png" alt="">
+        </div>
+        <div class="SQliteText">
+            <h2>SQlite database</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam necessitatibus quis placeat, cupiditate
+                recusandae totam omnis eos debitis numquam sed magni voluptatum distinctio reiciendis delectus suscipit
+                corporis vero! Adipisci, sit?
+                Eligendi, tenetur temporibus aliquid consectetur rerum veniam vitae incidunt commodi exercitationem
+                assumenda, architecto, debitis itaque autem sed non? Esse, laborum nihil. Dolor quis temporibus sequi
+                porro ad, qui magnam. Molestias.
+                Neque magni aut modi! Nostrum id, ut adipisci, temporibus, atque molestiae debitis labore amet suscipit
+                quam harum doloribus rem nam dignissimos asperiores deserunt. Minus quod esse natus? Atque, corporis
+                laudantium.</p>
+        </div>
+    </div>
+
+    <div class="Slideshow">
+        <!-- slideshow with jQuery -->
+        <div class="SlideshowImage Image">
+            <img src="./assets/Slide1.png" alt="">
+            <img src="./assets/Slide2.png" alt="">
+            <img src="./assets/Slide3.png" alt="">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 - Bart Schelpe</p>
+    </footer>
+</body>
