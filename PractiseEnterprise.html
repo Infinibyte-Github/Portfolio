@@ -28,6 +28,22 @@
                 });
             }, 2000);
         };
+
+        $(document).ready(function () {
+            var images = $('.slideshow-img');
+            var currentIndex = 0;
+
+            for (var i = 1; i < images.length; i++) {
+                $(images[i]).hide();
+            }
+
+            setInterval(function () {
+                $(images[currentIndex]).fadeOut("slow", function () {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    $(images[currentIndex]).fadeIn();
+                })
+            }, 3000);
+        });
     </script>
 
     <!-- CSS import -->
@@ -51,43 +67,54 @@
 
 
     <div class="Cool">
-        <h2>Manage discord servers like never before!</h2>
+        <h2>Manage discord servers like never before with Statbot</h2>
         <button class="Button">
-            <a href="#Discord">Explore</a>
+            <a href="#About">Explore</a>
         </button>
     </div>
 
-    <div class="Discord Box" id="Discord">
+    <div class="About Box" id="About">
+        <div class="AboutText">
+            <h2>About us</h2>
+            <p>Welcome to our school project about StatBot! We are Lasse and Bart, studying ICT at Thomas More, and we
+                have created a Discord bot that is designed to help users monitor their servers in real-time through a
+                Grafana dashboard.
+
+                StatBot is a unique tool that provides users with valuable data and analytics, including the number of
+                users online, the number of messages sent, and the number of voice channels used. With this information,
+                you can easily make informed decisions about your server and its users, and track your server's
+                performance over time.</p>
+        </div>
+    </div>
+
+
+    <div class="Discord Box">
         <div class="DiscordImage">
             <!-- https://discord.com/branding -->
             <img src="./assets/discord-mark-blue.png" alt="">
         </div>
         <div class="DiscordText">
             <h2>Discord bot</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam necessitatibus quis placeat, cupiditate
-                recusandae totam omnis eos debitis numquam sed magni voluptatum distinctio reiciendis delectus suscipit
-                corporis vero! Adipisci, sit?
-                Eligendi, tenetur temporibus aliquid consectetur rerum veniam vitae incidunt commodi exercitationem
-                assumenda, architecto, debitis itaque autem sed non? Esse, laborum nihil. Dolor quis temporibus sequi
-                porro ad, qui magnam. Molestias.
-                Neque magni aut modi! Nostrum id, ut adipisci, temporibus, atque molestiae debitis labore amet suscipit
-                quam harum doloribus rem nam dignissimos asperiores deserunt. Minus quod esse natus? Atque, corporis
-                laudantium.</p>
+            <p>Our Discord bot, StatBot, is a powerful tool designed to help users monitor their servers in real-time.
+                StatBot connects to your Discord server and gathers valuable data about user activity, channel usage,
+                and more. It is incredibly user-friendly and easy to use. Simply add it to your server and start
+                monitoring
+                your server's performance. With StatBot, you can track metrics like the number of messages sent, the
+                number of users online, and the number of voice channels used. This information can help you make
+                informed decisions about your server and its users, and ensure that everyone is having a great
+                experience.</p>
         </div>
     </div>
 
     <div class="Grafana Box">
         <div class="GrafanaText">
             <h2>Grafana dashboard</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam necessitatibus quis placeat, cupiditate
-                recusandae totam omnis eos debitis numquam sed magni voluptatum distinctio reiciendis delectus suscipit
-                corporis vero! Adipisci, sit?
-                Eligendi, tenetur temporibus aliquid consectetur rerum veniam vitae incidunt commodi exercitationem
-                assumenda, architecto, debitis itaque autem sed non? Esse, laborum nihil. Dolor quis temporibus sequi
-                porro ad, qui magnam. Molestias.
-                Neque magni aut modi! Nostrum id, ut adipisci, temporibus, atque molestiae debitis labore amet suscipit
-                quam harum doloribus rem nam dignissimos asperiores deserunt. Minus quod esse natus? Atque, corporis
-                laudantium.</p>
+            <p>Our Grafana dashboard is an essential component of StatBot, providing users with real-time data and
+                analytics about their Discord servers. With Grafana, you can easily monitor key metrics like user
+                activity, channel usage, and more, and make informed decisions about your server and its users. The
+                Grafana dashboard is designed to be user-friendly and easy to read, ensuring that you can quickly access
+                the information you need. We believe that our Grafana dashboard is an essential tool for anyone who
+                wants to take control of their Discord server and create a great online community.</p>
         </div>
         <div class="GrafanaImage Image">
             <!-- grafana.com -->
@@ -102,28 +129,31 @@
         </div>
         <div class="SQliteText">
             <h2>SQlite database</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam necessitatibus quis placeat, cupiditate
-                recusandae totam omnis eos debitis numquam sed magni voluptatum distinctio reiciendis delectus suscipit
-                corporis vero! Adipisci, sit?
-                Eligendi, tenetur temporibus aliquid consectetur rerum veniam vitae incidunt commodi exercitationem
-                assumenda, architecto, debitis itaque autem sed non? Esse, laborum nihil. Dolor quis temporibus sequi
-                porro ad, qui magnam. Molestias.
-                Neque magni aut modi! Nostrum id, ut adipisci, temporibus, atque molestiae debitis labore amet suscipit
-                quam harum doloribus rem nam dignissimos asperiores deserunt. Minus quod esse natus? Atque, corporis
-                laudantium.</p>
+            <p>Our SQLite database is a critical component of StatBot, facilitating communication between the Discord
+                bot and Grafana dashboard. The database stores all the data collected by StatBot from your Discord
+                server, allowing it to be easily accessed and analyzed on the Grafana dashboard.
+
+                SQLite is a powerful and reliable database management system that is lightweight and easy to use. It
+                ensures that StatBot can efficiently store and retrieve data, and enables real-time monitoring of key
+                metrics like user activity, channel usage, and more.</p>
         </div>
     </div>
 
-    <div class="Slideshow">
+    <div class="Box Slideshow">
+        <h2>Screenshots</h2>
         <!-- slideshow with jQuery -->
         <div class="SlideshowImage Image">
-            <img src="./assets/Slide1.png" alt="">
-            <img src="./assets/Slide2.png" alt="">
-            <img src="./assets/Slide3.png" alt="">
+            <img class="slideshow-img" src="./assets/Slide1.png" alt="">
+            <img class="slideshow-img" src="./assets/Slide2.png" alt="">
+            <img class="slideshow-img" src="./assets/Slide3.png" alt="">
         </div>
     </div>
 
+    <div class="FloatingDiv"></div>
+
     <footer>
-        <p>&copy; 2023 - Bart Schelpe</p>
+        <p>Copyright &copy; Thomas More Mechelen-Antwerpen vzw -
+            Campus De Nayer - Professionele bachelor elektronica-ict -
+            2023</p>
     </footer>
 </body>

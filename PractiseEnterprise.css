@@ -136,18 +136,18 @@ nav li {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.Discord:hover > .DiscordText {
+.Discord:hover>.DiscordText {
     border-left: 4px solid hsl(340deg 100% 32%);
     transition: 1000ms;
 }
 
-.Discord:hover > .DiscordImage img {
+.Discord:hover>.DiscordImage img {
     transform: rotate(360deg);
     transition: 1000ms;
 }
 
 
-.DiscordImage{
+.DiscordImage {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,12 +165,12 @@ img {
     transition: 1000ms;
 }
 
-.Grafana:hover > .GrafanaText {
+.Grafana:hover>.GrafanaText {
     border-right: 4px solid hsl(340deg 100% 32%);
     transition: 1000ms;
 }
 
-.Grafana:hover > .GrafanaImage img {
+.Grafana:hover>.GrafanaImage img {
     transform: rotate(360deg);
     transition: 1000ms;
 }
@@ -182,19 +182,19 @@ img {
     transition: 1000ms;
 }
 
-.Image{
+.Image {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 50%;
 }
 
-.SQlite:hover > .SQliteText {
+.SQlite:hover>.SQliteText {
     border-left: 4px solid hsl(340deg 100% 32%);
     transition: 1000ms;
 }
 
-.SQlite:hover > .SQliteImage img {
+.SQlite:hover>.SQliteImage img {
     transform: rotate(360deg);
     transition: 1000ms;
 }
@@ -206,6 +206,21 @@ img {
     transition: 1000ms;
 }
 
-.SQlite img{
+.SQlite img {
     width: 500px;
+}
+
+.slideshow-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.Slideshow {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.FloatingDiv{
+    float: left;
 }
